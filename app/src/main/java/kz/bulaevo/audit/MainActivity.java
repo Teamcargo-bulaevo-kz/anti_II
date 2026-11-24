@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
         LinearLayout row = new LinearLayout(this);
         row.setOrientation(LinearLayout.HORIZONTAL);
         saveBtn = button("Сохранить");
-        shareBtn = button("Отправить файл");
+        shareBtn = button("Отправить");
         textBtn = button("Текстом");
         row.addView(saveBtn, weight());
         row.addView(shareBtn, weight());

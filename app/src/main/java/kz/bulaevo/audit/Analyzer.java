@@ -361,6 +361,7 @@ public class Analyzer {
             JSONObject x = a.optJSONObject(i);
             if (x == null) continue;
             String pkg = x.optString("package");
+            if ("kz.bulaevo.audit".equals(pkg)) continue; // сам сканер не оцениваем
             boolean system = x.optBoolean("system");
             boolean updSys = x.optBoolean("updated_system");
             if (system && !updSys) systemApps++;
